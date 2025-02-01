@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Page</title>
+    <link rel="stylesheet" href="MainPageStyle.css">
+    <link rel="stylesheet" href="animsition.css">
+</head>
+<body>
+    <script src="jquery-3.7.1.min.js"></script>
+    
+    <div class="quote-section">
+        <p class="quote">"A strong man doesn't need to read the future, he makes his own."</p>
+        <p class="author">- Solid Snake</p>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-box"><a href="Portfolio.html">ABOUT</a></div>
+        <div class="nav-box"><a href="MainPage.html">PROJECTS</a></div>
+        <div class="nav-box"><a href="NewPage.html">CONTACTS</a></div>
+        <img src="rotatingcube.gif" alt="Description of GIF" class="nav-gif">
+    </nav>
+
+    <div class="text-box">
+        <p class="resume">I am Menzel A. Villanueva, I am a humble programmer with humble beginnings.
+            <br><br>I have been working on various projects and I am excited to share them with you.
+            <br><br>I have experience in coding in c#, C++, HTML, CSS, JavaScript, and Python. 
+            <br><br>I am a proactive problem solver and a reliable person.
+        </p>
+    </div>
+
+    <script src="animsition.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".animsition").animsition({
+                inClass: 'fade-in-up',
+                outClass: 'fade-out-up',
+                inDuration: 1500,
+                outDuration: 800,
+                linkElement: '.animsition-link',
+                loading: true,
+                loadingParentElement: 'body',
+                loadingClass: 'animsition-loading',
+                timeout: false,
+                onLoadEvent: true,
+                overlay: false,
+                transition: function(url){ window.location.href = url; }
+            });
+        });
+    </script>
+</body>
+</html>

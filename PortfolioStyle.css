@@ -1,0 +1,52 @@
+/* Add your styles here */
+
+body{
+    background-color: #cdcdcd;
+}
+
+@font-face {
+    font-family: test;
+    src: url(Colus-Regular.woff);
+}
+
+@font-face {
+    font-family: Arcade;
+    src: url(ARCADE_N.TTF);
+}
+
+button{
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+div{
+    display:inline-block;
+}
+
+.newdiv{
+    margin-top: 400px;
+}
+
+img{
+    margin-left: 680px;
+}
+
+p{
+    font-family: test;
+}
+
+.test{
+    margin-left: 100px;
+    margin-top: 100px;
+    font-size: 28px;
+    text-align: center;
+}
+
+.test2{
+    margin-left: 60px;
+    margin-top: 100px;
+    font-size: 28px;
+    text-align: center;
+}
+

@@ -1,0 +1,128 @@
+/* Add your styles here */
+
+body {
+    background-color: #cdcdcd;
+}
+
+@font-face {
+    font-family: test;
+    src: url(Colus-Regular.woff);
+}
+
+@font-face {
+    font-family: Arcade;
+    src: url(ARCADE_N.TTF);
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column; /* Stack boxes vertically */
+    background-color: #333;
+    padding: 10px;
+    position: fixed; /* Reverted to fixed position */
+    left: 0; /* Align to the left side */
+    top: 0; /* Align to the top */
+    height: 100%; /* Full height */
+}
+
+.grid-container {
+    display: grid;
+    font-family: test;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 10px; /* Space between boxes */
+    padding: 20px; /* Padding around the grid */
+    margin-top: 100px; /* Added margin to prevent clipping into the navbar */
+}
+
+.grid-item {
+    margin-left: 100px;
+    position: relative; /* Position for hover effect */
+    overflow: hidden; /* Hide overflow */
+}
+
+.main-image {
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.main-image2 {
+    width: 50%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.hover-content {
+    position: absolute; /* Position for hover effect */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: white;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s; /* Fade effect */
+}
+
+.grid-item:hover .hover-content {
+    opacity: 1; /* Show on hover */
+}
+
+.nav-box {
+    background-color: #555;
+    font-family: test;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 10px; /* Space between boxes */
+    transition: background-color 0.3s;
+}
+
+.nav-gif {
+    margin-top: 550px; /* Push the GIF to the bottom of the navbar */
+    width: 100px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure it behaves like a block element */
+    margin-left: auto; /* Center the GIF horizontally */
+    margin-right: auto; /* Center the GIF horizontally */
+}
+
+.nav-box a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-box:hover {
+    background-color: #777;
+}
+
+.quote-section {
+    margin-top: 100px; /* Adjust as needed */
+    text-align: center;
+}
+
+.quote {
+    font-size: 24px;
+    font-family: Arcade; /* Use the Arcade font */
+}
+
+.author {
+    font-size: 20px;
+    font-family: Arcade; /* Use the test font */
+}
+
+.text-box{
+    margin-top: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
+    position: relative; /* Position for hover effect */
+    overflow: hidden; /* Hide overflow */
+}
+
+.resume{
+    font-family: test;
+    font-size: 30px;
+}
